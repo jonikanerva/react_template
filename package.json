@@ -50,14 +50,6 @@
       "plugin:@typescript-eslint/recommended",
       "prettier/@typescript-eslint"
     ],
-    "rules": {
-      "@typescript-eslint/no-unused-vars": [
-        "error",
-        {
-          "argsIgnorePattern": "^_"
-        }
-      ]
-    },
     "settings": {
       "react": {
         "version": "detect"
