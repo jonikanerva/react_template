@@ -1,14 +1,19 @@
 {
+  "compileOnSave": true,
   "compilerOptions": {
+    "baseUrl": "./src",
     "esModuleInterop": true,
-    "incremental": true,
     "jsx": "react",
     "module": "commonjs",
+    "noEmit": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "outDir": "build",
+    "paths": {
+      "~*": ["./*"]
+    },
     "pretty": true,
     "resolveJsonModule": true,
     "rootDir": ".",
@@ -16,12 +21,6 @@
     "strict": true,
     "target": "es6",
     "typeRoots": ["node_modules/@types"],
-    "types": ["node"],
-    "baseUrl": "./src",
-    "paths": {
-      "~*": ["./*"]
-    }
-  },
-  "include": ["**/*.ts", "**/*.tsx", "**/*.json"],
-  "compileOnSave": true
+    "types": ["node"]
+  }
 }

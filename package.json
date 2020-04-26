@@ -8,9 +8,10 @@
     "build": "yarn lint && yarn clean && parcel build ./public/index.html",
     "start": "parcel serve --port 3000 ./public/index.html",
     "clean": "rm -rf ./dist",
-    "lint": "yarn lint:eslint && yarn lint:ts && yarn lint:json",
+    "lint": "yarn lint:eslint && yarn lint:tsc && yarn lint:ts && yarn lint:json",
     "lint:eslint": "eslint . --ext .ts,.tsx",
-    "lint:ts": "prettier --check --parser typescript --config package.json '**/*.ts*'",
+    "lint:tsc": "tsc --project .",
+    "lint:ts": "prettier --check --parser typescript --config package.json 'src/**/*'",
     "lint:json": "prettier --check '**/*.json'"
   },
   "engines": {
