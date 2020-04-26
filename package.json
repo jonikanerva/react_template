@@ -13,6 +13,9 @@
     "lint:ts": "prettier --check --parser typescript --config package.json '**/*.ts*'",
     "lint:json": "prettier --check '**/*.json'"
   },
+  "engines": {
+    "node": "^12.16.2"
+  },
   "dependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
