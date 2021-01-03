@@ -11,7 +11,7 @@
     "lint": "yarn lint:eslint && yarn lint:tsc && yarn lint:ts && yarn lint:json",
     "lint:eslint": "eslint . --ext .ts,.tsx",
     "lint:tsc": "tsc --project .",
-    "lint:ts": "prettier --check --parser typescript --config package.json 'src/**/*'",
+    "lint:ts": "prettier --check --parser typescript --config package.json 'src/**/*.ts*'",
     "lint:json": "prettier --check '**/*.json'"
   },
   "engines": {
