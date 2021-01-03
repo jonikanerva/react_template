@@ -10,13 +10,11 @@ Install dependencies with `yarn install`.
 
 Run static analysis and linters with `yarn lint`.
 
-Format files with `yarn format`.
-
 ## Running
 
 Build application with `yarn build`.
 
-Start application in dev mode with `yarn start`.
+Start application in dev/watch mode with `yarn start`.
 
 [nvm]: https://github.com/creationix/nvm/
 [prettier]: https://prettier.io
